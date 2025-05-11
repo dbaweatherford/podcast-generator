@@ -1,6 +1,6 @@
 name: "Podcast Generator"
 author: "Anastasia Weatherford"
-description: "Generates a feed for a podcast from a YAML file"
+description: "Generates an iTunes-compatible podcast RSS feed from a YAML file"
 runs:
   using: "docker"
   image: "Dockerfile"
@@ -9,10 +9,10 @@ branding:
   color: "red"
 inputs:
   email:
-    description: The commiter's email address
+    description: "The committer's email address"
     required: true
-    default: ${{ github.actor }}@localhost
+    default: "GitHub Actions"
   name:
-    description: The committer's name
+    description: "The committer's name"
     required: true
-    default: ${{ github.actor }}
+    default: "actions@localhost"
