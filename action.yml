@@ -5,12 +5,10 @@ author: "Anastasia Weatherford"
 inputs:
   name:
     description: "Git committer name"
-    required: true
     default: "GitHub Actions"
 
   email:
     description: "Git committer email"
-    required: true
     default: "actions@localhost"
 
 runs:
